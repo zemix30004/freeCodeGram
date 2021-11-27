@@ -28,7 +28,7 @@
             <div class="container">
                 <a class="navbar-brand d-flex" href="{{ url('/') }}">
                     <div class="">
-                        <img src="{{ asset('/svg/freeCodeCampLogo.svg') }}" style="height: 20px; border-right: 1px solid #333333" class="pr-3">
+                        <img src="{{ asset('/svg/freeCodeCampLogo.svg') }}" style="height: 2px; border-right: 1px solid #333333" class="pr-3">
                     </div>
                     <div class="pl-3">freeCodeGram</div>
                 </a>
@@ -60,7 +60,7 @@
                         @else
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }}
+                                    {{ Auth::user()->username }}
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
